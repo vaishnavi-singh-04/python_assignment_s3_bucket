@@ -143,4 +143,3 @@ Files of interest
 - [app/s3_bucket/repositories/s3_repository.py](app/s3_bucket/repositories/s3_repository.py)
 - [app/s3_bucket/schemas/s3_request_schema.py](app/s3_bucket/schemas/s3_request_schema.py)
 - [app/core/config.py](app/core/config.py)
-
