@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>S3 Manager</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h1>S3 UI Dashboard</h1>
+
+<div class="grid">
+
+<section>
+    <h3>List Buckets</h3>
+    <button onclick="listBuckets()">Fetch Buckets</button>
+</section>
+
+<section>
+    <h3>Create Bucket</h3>
+    <input id="createBucketName" type="text" placeholder="Bucket name">
+    <button onclick="createBucket()">Create</button>
+</section>
+
+<section>
+    <h3>Delete Bucket</h3>
+    <input id="deleteBucketName" type="text" placeholder="Bucket name">
+    <button onclick="deleteBucket()">Delete</button>
+</section>
+
+<section>
+    <h3>Create Folder</h3>
+    <input id="folderBucket" type="text" placeholder="Bucket name">
+    <input id="folderName" type="text" placeholder="Folder name">
+    <button onclick="createFolder()">Create Folder</button>
+</section>
+
+<section>
+    <h3>Upload File</h3>
+    <input id="uploadBucket" type="text" placeholder="Bucket name">
+    <input id="uploadFolder" type="text" placeholder="Folder (optional)">
+    <input type="file" id="fileInput">
+    <button onclick="uploadFile()">Upload</button>
+</section>
+
+<section>
+    <h3>Delete File</h3>
+    <input id="deleteFileBucket" type="text" placeholder="Bucket name">
+    <input id="deleteFileName" type="text" placeholder="File name">
+    <input id="deleteFileFolder" type="text" placeholder="Folder (optional)">
+    <button onclick="deleteFile()">Delete File</button>
+</section>
+
+<section>
+    <h3>Copy / Move File</h3>
+    <input id="cmBucket" type="text" placeholder="Bucket name">
+    <input id="cmFile" type="text" placeholder="File name">
+    <input id="cmSource" type="text" placeholder="Source folder">
+    <input id="cmDest" type="text" placeholder="Destination folder">
+    <button onclick="copyFile()">Copy</button>
+    <button onclick="moveFile()">Move</button>
+</section>
+
+</div>
+
+<h3>API Response</h3>
+<pre id="output">Waiting for request...</pre>
+<script src="app.js"></script>
+</body>
+</html>
