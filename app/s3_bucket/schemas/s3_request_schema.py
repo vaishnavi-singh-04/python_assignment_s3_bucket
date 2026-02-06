@@ -8,10 +8,6 @@ class CreateBucketRequest( BaseModel):
         ...,
         description="Name of the S3 bucket. Must be globally unique and DNS compliant."
     )
-    # region: AWSRegion = Field(
-    #     default=AWSRegion.us_east_1,
-    #     description="AWS region where the bucket will be created (e.g., ap-south-1)."
-    # )
     
 
 class CreateFolderRequest(BaseModel):
